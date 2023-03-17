@@ -17,6 +17,7 @@
   color: var(--primary50);
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  border-bottom: 1px solid var(--primary200);
   padding: 8px;
   display: flex;
   justify-content: space-between;

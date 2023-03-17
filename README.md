@@ -7,3 +7,7 @@ yarn dev / vite                    # for development server
 yarn build / vite build            # for optimized production build   
 yarn preview / vite preview        # see the production build  
 ```
+
+The accordion is mobile responsive and you can check it out at [mathewbushuru.github.io/custom-react-accordion](https://mathewbushuru.github.io/custom-react-accordion)
+
+![demo](./demo.jpg)

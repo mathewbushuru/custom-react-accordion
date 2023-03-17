@@ -7,11 +7,12 @@ export const SimpleAccordion = ({ data }) => {
     <>
       <div className="simple-accordion">
         {data.length ? (
-          data.map((data) => (
+          data.map((data, index) => (
             <AccordionItem
               key={crypto.randomUUID()}
               title={data.title}
               content={data.content}
+              defaultActive={index === 0}
             />
           ))
         ) : (
@@ -22,8 +23,8 @@ export const SimpleAccordion = ({ data }) => {
   );
 };
 
-function AccordionItem({ title, content }) {
-  const [isActive, setIsActive] = useState(false);
+function AccordionItem({ title, content, defaultActive = false }) {
+  const [isActive, setIsActive] = useState(defaultActive);
 
   return (
     <div className="accordion-item">
