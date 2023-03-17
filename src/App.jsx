@@ -1,4 +1,4 @@
-import { Accordion } from "./components/Accordion";
+import { SimpleAccordion } from "./components/SimpleAccordion";
 
 import DUMMY_DATA from "../DUMMY_DATA";
 
@@ -7,8 +7,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      Accordion
-      <Accordion data={DUMMY_DATA} />
+      Simple Accordion
+      <SimpleAccordion data={DUMMY_DATA} />
     </div>
   );
 }

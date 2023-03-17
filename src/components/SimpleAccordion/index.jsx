@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import "./Accordion.css";
+import "./SimpleAccordion.css";
 
-export const Accordion = ({ data }) => {
+export const SimpleAccordion = ({ data }) => {
   return (
     <>
-      <div className="accordion">
+      <div className="simple-accordion">
         {data.length ? (
           data.map((data) => (
             <AccordionItem
