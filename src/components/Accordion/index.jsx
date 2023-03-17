@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Accordion.css";
 
@@ -10,16 +10,20 @@ const DUMMY_DATA = {
 
 export const Accordion = () => {
   const { title, content } = DUMMY_DATA;
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
       <h1>Accordion Demo</h1>
       <div className="accordion">
         <div className="accordion-item">
-          <div className="accordion-title">
+          <div
+            className="accordion-title"
+            onClick={() => setIsActive((prevState) => !prevState)}
+          >
             <div>{title}</div>
-            <div>+</div>
+            <div>{isActive ? "-" : "+"}</div>
           </div>
-          <div className="accordion-content">{content}</div>
+          {isActive && <div className="accordion-content">{content}</div>}
         </div>
       </div>
     </>
