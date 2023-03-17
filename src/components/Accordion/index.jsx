@@ -2,20 +2,21 @@ import React, { useState } from "react";
 
 import "./Accordion.css";
 
-
-
 export const Accordion = ({ data }) => {
   return (
     <>
-      <h1>Accordion Demo</h1>
       <div className="accordion">
-        {data.map((data) => (
-          <AccordionItem
-            key={crypto.randomUUID()}
-            title={data.title}
-            content={data.content}
-          />
-        ))}
+        {data.length ? (
+          data.map((data) => (
+            <AccordionItem
+              key={crypto.randomUUID()}
+              title={data.title}
+              content={data.content}
+            />
+          ))
+        ) : (
+          <p>No data</p>
+        )}
       </div>
     </>
   );
