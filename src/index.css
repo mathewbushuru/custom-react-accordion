@@ -1,7 +1,16 @@
 :root {
+  --primary50: #f9fafb;
+  --primary100: #f1f5f9;
+  --primary200: #e5e7eb;
+  --primary400: #9ca3af;
+  --primary500: #6b7280;
+  --primary600: #4b5563;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  font-size: 18px;
   font-weight: 400;
+  background-color: var(--primary50);
+  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,9 +19,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  /* place-items: center; */
-  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
